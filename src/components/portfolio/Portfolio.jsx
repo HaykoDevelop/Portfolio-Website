@@ -17,46 +17,42 @@ const Portfolio = () => {
       description:
         'AHMO is a new web application that offers a variety of features including group chats, personal chats, and game chats. Users can search for members and add them to their chosen chat. Additionally, users can play different types of games such as "Guess a Word", "Truth or Dare", "Words".',
       technologies: 'Next.js | Nest.js | Socket.io',
-      link: 'https://ahmo-chat.up.railway.app',
       github: 'https://github.com/HYF-Class19/ahmo-frontend-class19',
     },
     {
       id: 2,
-      title: 'Fitness Application',
-      img: IMG2,
-      description:
-        'This fitness app is a C# wpf application that allows you to track your fitness progress and maintain a healthy lifestyle.',
-      technologies: 'C# | Entity Framework | WPF',
-      github: '',
-    },
-    {
-      id: 3,
-      title: 'Typ Top',
-      img: IMG3,
-      description: 'A typing test website built with HTML, CSS, and JavaScript that test your typing speed.',
-      technologies: 'HTML| CSS | JavaScript',
-      link: '',
-      github: '',
-    },
-    {
-      id: 4,
       title: 'Z',
       img: IMG4,
       description:
         'Z is a social media app made with ionci and vue.js its fully functional with direct messaging made with firebase.',
       technologies: 'Ionic | Vue.js | Firebase | Javascript',
-      link: '',
-      github: '',
+      github: 'https://github.com/HaykoDevelop/Z-Front',
     },
     {
-      id: 5,
+      id: 3,
       title: 'Immo Application',
       img: IMG5,
       description:
         'Immo is a application build completly with C# and Entity Framework for a real estate company. It is a WPF application used to log in every users and houses data in the database. ',
       technologies: 'C# | Entity Framework | WPF',
-      link: '',
-      github: '',
+      github: 'https://github.com/HaykoDevelop/Immo-Application',
+    },
+    {
+      id: 4,
+      title: 'Fitness Application',
+      img: IMG2,
+      description:
+        'This fitness app is a C# wpf application that allows you to track your fitness progress and maintain a healthy lifestyle.',
+      technologies: 'C# | Entity Framework | WPF',
+      github: 'https://github.com/HaykoDevelop/FitnesDB',
+    },
+    {
+      id: 5,
+      title: 'Typ Top',
+      img: IMG3,
+      description: 'A typing test website built with HTML, CSS, and JavaScript that test your typing speed.',
+      technologies: 'HTML| CSS | JavaScript',
+      github: 'https://github.com/HaykoDevelop/Typ-Top',
     },
     {
       id: 6,
@@ -65,8 +61,7 @@ const Portfolio = () => {
       description:
         'A Simpel to do app created with react and typescript and scss, that allows you to add and delete tasks.',
       technologies: 'Typescript | React | CSS',
-      link: '',
-      github: '',
+      github: 'https://github.com/HaykoDevelop/To-Do-Simpel',
     },
   ];
 
