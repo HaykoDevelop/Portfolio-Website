@@ -156,3 +156,9 @@ img {
   text-shadow: 0 0 5px var(--color-primary);
   transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 730px) {
+  .cyberpunk-speech {
+    display: none;
+  }
+}
