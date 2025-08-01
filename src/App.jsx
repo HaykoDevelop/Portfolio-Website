@@ -6,16 +6,19 @@ import Header from './components/header/Header';
 import Intro from './components/intro/Intro';
 import Portfolio from './components/portfolio/Portfolio';
 import Topbar from './components/topbar/Topbar';
-
+import TalkingCar from './components/talkingCar/TalkingCar';
+import SectionSpeechHandler from './components/speech/SectionSpeechHandler.jsx';
 
 const App = () => {
   return (
     <>
+      <SectionSpeechHandler />
+      <TalkingCar />
       <Header />
       <Topbar />
-      <Intro />
-      <Experience />
-      <Portfolio />
+      <Intro/>
+      <Experience/>
+      <Portfolio/>
       <Contact />
       <Footer />
     </>

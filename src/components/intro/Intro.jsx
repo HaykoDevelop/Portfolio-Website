@@ -6,7 +6,7 @@ import './intro.css';
 
 const Intro = () => {
   return (
-    <section id="about">
+    <section id="intro" className='section'>
       <h5>Get to know me</h5>
       <h2>About Me</h2>
       <div className="container about__container">
@@ -36,7 +36,7 @@ const Intro = () => {
               I’m always exploring new technologies and improving my skills to create innovative and efficient digital experiences. 
               Let’s connect and build something awesome!
             </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="futuristic-btn outline">Let's Talk</a>
         </div>
       </div>
     </section>

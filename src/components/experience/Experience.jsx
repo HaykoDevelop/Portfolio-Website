@@ -1,139 +1,94 @@
-import React from 'react';
-import { BsFillPatchCheckFill } from 'react-icons/bs';
+import React, { useRef } from 'react';
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaAngular,
+  FaVuejs,
+  FaSass,
+  FaPhp,
+  FaPython,
+} from 'react-icons/fa';
+import { SiTypescript, SiNextdotjs, SiNestjs, SiIonic, SiTailwindcss, SiDotnet, SiBlazor, SiPandas, SiNumpy } from 'react-icons/si';
+import { TbBrandCSharp } from "react-icons/tb";
+import { useScroll, useTransform, motion } from 'framer-motion';
 import './experience.css';
 
 const Experience = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({ target: targetRef });
+  const x = useTransform(scrollYProgress, [0, 1], ['65%', '-100%']);
+
   return (
-    <section id="experience">
-      <h5>The Skills I Have</h5>
-      <h2>Skills</h2>
-      <div className="container experience__container">
-        <div>
-          <h3>Web & Mobile Development</h3>
-          <div className="experience__content">
-          <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>HTML</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>CSS</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>JavaScript</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>TypeScript</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>C#</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Kotlin</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>PHP</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>React</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Next.js</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Nest.js</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Angular</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Vue</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Ionic</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>SCSS</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Tailwind</h4>
-            </article>
+    <section id="skills" ref={targetRef} className="relative h-[300vh] section">
+      <div className="container sticky top-0 flex h-screen items-center overflow-hidden">
+        <h2 className="skills-title">Skills</h2>
+        <motion.div style={{ x }} className="flex gap-4 w-[300vw]">
+          <div className="skill-box">
+            <FaHtml5 className="experience__details-icon" />
           </div>
-        </div>
-        <div>
-          <h3>Application Development</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>C#</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>.NET Core</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>.NET Web API</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Entity Framework</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Blazor </h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>WPF</h4>
-            </article>
+          <div className="skill-box">
+            <FaCss3Alt className="experience__details-icon" />
           </div>
-        </div>
-        <div>
-          <h3>AI</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Python</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Pandas</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>NumPy</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>MRJob</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>Scikit-learn</h4>
-            </article>
-            <article className="experience__details">
-              <BsFillPatchCheckFill className="experience__details-icon" />
-              <h4>matplotlib</h4>
-            </article>
+          <div className="skill-box">
+            <FaJs className="experience__details-icon" />
           </div>
-        </div>
+          <div className="skill-box">
+            <SiTypescript className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <TbBrandCSharp className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <FaPhp className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <FaReact className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <SiNextdotjs className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <SiNestjs className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <FaAngular className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <FaVuejs className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <SiIonic className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <FaSass className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <SiTailwindcss className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <TbBrandCSharp className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <SiDotnet className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <SiBlazor className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <FaPython className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <SiPandas className="experience__details-icon" />
+          </div>
+          <div className="skill-box">
+            <SiNumpy className="experience__details-icon" />
+          </div>
+        </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
