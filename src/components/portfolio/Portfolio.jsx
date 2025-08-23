@@ -7,6 +7,8 @@ import IMG3 from '../../assets/Screenshot (399).png';
 import IMG4 from '../../assets/Screenshot (401).png';
 import IMG5 from '../../assets/Screenshot (402).png';
 import IMG6 from '../../assets/Screenshot (403).png';
+import IMG7 from '../../assets/IMG7.png'
+import IMG8 from '../../assets/Screenshot (29).png';
 import "./portfolio.css";
 
 const Portfolio = () => {
@@ -14,37 +16,49 @@ const Portfolio = () => {
     {
       id: 1,
       img: IMG1,
-      title: 'AHMO',
+      title: 'AHMO (Next.js)',
       github: 'https://github.com/HYF-Class19/ahmo-frontend-class19',
     },
     {
       id: 2,
-      img: IMG4,
-      title: 'Z',
-      github: 'https://github.com/HaykoDevelop/Z-Front',
+      img: IMG7,
+      title: 'Z (Kotlin)',
+      github: 'https://github.com/HaykoDevelop/Z-Kotlin-Front',
     },
     {
       id: 3,
-      img: IMG3,
-      title: 'Typ Top',
-      github: 'https://github.com/HaykoDevelop/Typ-Top',
+      img: IMG8,
+      title: 'Personal Website (React.js)',
+      github: 'https://github.com/HaykoDevelop/Z-Kotlin-Front',
     },
     {
       id: 4,
-      img: IMG2,
-      title: 'Fitness Application',
-      github: 'https://github.com/HaykoDevelop/FitnesDB',
+      img: IMG4,
+      title: 'Z (Vue.js)',
+      github: 'https://github.com/HaykoDevelop/Z-Front',
     },
     {
       id: 5,
-      img: IMG5,
-      title: 'Immo Application',
-      github: 'https://github.com/HaykoDevelop/Immo-Application',
+      img: IMG3,
+      title: 'Typ Top (JS)',
+      github: 'https://github.com/HaykoDevelop/Typ-Top',
     },
     {
       id: 6,
+      img: IMG2,
+      title: 'Fitness Application (C#)',
+      github: 'https://github.com/HaykoDevelop/FitnesDB',
+    },
+    {
+      id: 7,
+      img: IMG5,
+      title: 'Immo Application (C#)',
+      github: 'https://github.com/HaykoDevelop/Immo-Application',
+    },
+    {
+      id: 8,
       img: IMG6,
-      title: 'To Do',
+      title: 'To Do (JS)',
       github: 'https://github.com/HaykoDevelop/To-Do-Simpel',
     },
   ];

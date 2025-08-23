@@ -69,7 +69,6 @@ const TalkingCar = () => {
 
     let mixer;
     let carModel;
-    const synth = window.speechSynthesis;
 
     const animate = () => {
       requestAnimationFrame(animate);
@@ -80,11 +79,9 @@ const TalkingCar = () => {
 
     const speak = (text) => {
       if (!text || window.innerWidth < 1400) return;
-      synth.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.rate = 1;
       utterance.pitch = 1;
-      synth.speak(utterance);
     };
 
     let lastSectionId = null;
